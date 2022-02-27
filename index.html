@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,53 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <aside>
+        <div class="dark-transparent">
+            <img id="logo" src="resources/odin-lined.png" alt="Odin Logo">
+            <label for="logo">ODIN</label>
+        </div>
+        <figcaption>Photo by Hailie West on Unsplash</figcaption>
+    </aside>
+    <main>
+        <p class="welcome">This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.
+        </p>
+
+        <form action="#" method="post" id="page-form">
+            <h1>Let's do this!</h1>
+            <div class="input-area">
+                <div class="label-input-pair">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname">
+                </div>
+                <div class="label-input-pair">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname">
+                </div>
+                <div class="label-input-pair">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="label-input-pair">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="label-input-pair">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" class="error">
+                </div>
+                <div class="label-input-pair">
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm" class="error">
+                </div>
+            </div>
+        </form>
+
+        <button type="submit" form="page-form">Create Account</button>
+        <p class="already-has-account">Already have an account? <a href="#">Log in</a></p>
+    </main>
 </body>
+
 </html>
