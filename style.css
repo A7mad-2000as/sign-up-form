@@ -91,7 +91,8 @@ input {
 
 input:focus {
     outline: none;
-    border-color: rgb(0, 0, 255);
+    border-color: blue;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .error {
