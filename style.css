@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(resources/Norse-Bold.otf);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: "Helvatica", sans-serif;
+}
+
+aside {
+    width: 600px;
+    position: relative;
+    background-image: url(resources/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    flex-shrink: 0;
+}
+
+.dark-transparent {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 100%;
+}
+
+label[for="logo"] {
+    font-family: 'Norse Bold', cursive;
+    font-size: 150px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 15px;
+    left: 150px;
+}
+
+main {
+    flex: 1;
+    --left-margin: 50px;
+    padding: 150px 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.welcome {
+    margin: 0 var(--left-margin);
+    width: 1000px;
+    font-size: 28px;
+}
+
+form {
+    background-color: white;
+    padding: 40px var(--left-margin);
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 0;
+}
+
+.input-area {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 200px ;
+}
+
+.label-input-pair > label {
+    display: block;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input {
+    width: 300px;
+    height: 22px;
+    padding-left: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(0, 0, 255);
+}
+
+.error {
+    border-color: red;
+}
+
+.with-content {
+    position: relative;
+}
+
+.with-content::after {
+    content: "* Passwords do not match";
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.with-content:focus-within::after {
+    content: "";
+}
+
+button {
+    background-color: #596D48;
+    padding: 20px 50px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin: 20px var(--left-margin);
+    cursor: pointer;
+}
+
+.already-has-account {
+    margin-left: var(--left-margin);
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
